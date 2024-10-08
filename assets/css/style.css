@@ -1,0 +1,381 @@
+body {
+    background-color: #0d0d0d;
+}
+
+i {
+    color: hsl(45, 100%, 72%);
+}
+
+::selection {
+    background-color: hsl(45, 100%, 72%);
+    color: #000;
+}
+
+.leftSide {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide .details {
+    border: solid 1px gray;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide .details .top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.leftSide .details .top .pic {
+    width: 45%;
+    height: 45%;
+    /* width: 8rem;
+    height: 8rem; */
+    background-position: center;
+    background-size: cover;
+}
+
+.leftSide .details .top .pic img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.leftSide .details .top .name h5 {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.leftSide .details .top .job {
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #404040;
+    width: 55%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide .details .bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leftSide .details .bottom .email {
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .leftSide .details .bottom {
+        flex-direction: column;
+    }
+
+    .leftSide .details .bottom .email {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .leftSide .details .bottom .email .icon,
+    .leftSide .details .bottom .email .gmail {
+        width: 100%;
+    }
+
+    .leftSide .details .bottom .email .icon {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.leftSide .details .bottom .email .icon {
+    width: 3rem;
+    height: 3rem;
+    border: solid 1px gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leftSide .details .bottom .email .gmail {
+    overflow: hidden;
+}
+
+.leftSide .details .bottom .email .gmail a {
+    text-decoration: none;
+    color: white;
+}
+
+.leftSide .details .bottom .email .gmail span {
+    color: gray;
+}
+
+.leftSide .details .bottom .email .icon i {
+    color: hsl(45, 100%, 72%);
+}
+
+.leftSide .details .bottom .email p {
+    padding-right: 5rem;
+}
+
+.leftSide .details .bottom .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leftSide .details .bottom .social i {
+    color: hsl(45, 100%, 72%);
+    font-size: 1.3rem;
+}
+
+.gray p {
+    color: gray;
+}
+
+.bigLogo {
+    display: flex;
+    gap: .5rem;
+}
+
+.leftSide .hr {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+}
+
+.rightSide {
+    /* background-color: green; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide .content {
+    border: solid 1px gray;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.rightSide .content::-webkit-scrollbar {
+    display: none;
+}
+
+.orange {
+    color: hsl(45, 100%, 72%);
+}
+
+.orange:hover {
+    color: hsl(45, 100%, 72%);
+}
+
+.back-gray {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.rightSide .content .about .full .front {
+    height: 200px;
+    width: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.rightSide .content .about .full .back {
+    height: 200px;
+    width: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.rightSide .content .about .full {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full .front .icon {
+    font-size: 1.5rem;
+}
+
+.full .back .icon {
+    font-size: 1.5rem;
+}
+
+.educationTitle {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.educationTitle .icon {
+    border: solid 1px gray;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educationTitle i {
+    font-size: 1.5rem;
+}
+
+.custom-list li {
+    color: gray;
+    position: relative;
+    padding-left: 4rem;
+}
+
+.custom-list li {
+    list-style-type: none;
+}
+
+.custom-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: hsl(45, 100%, 72%);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.skills {
+    border: solid 1px gray;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.projects .project {
+    width: 16.5rem;
+    height: 16rem;
+    /* border: solid 1px gray; */
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.projects .project .overLay {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .overLay {
+    opacity: 1;
+}
+
+.form-control {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+.btn-send {
+    background-color: #343a40;
+    color: #ffc107;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.btn-send:hover {
+    background-color: #23272b;
+    color: #ffc107;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+    }
+
+}
+
+.nav-link.active.orange {
+    background-color: #ffc107 !important;
+    color: #23272b !important;
+}
+
